@@ -1,4 +1,5 @@
 const container = document.querySelector(".div-container")
+const color = document.querySelector("#color-picker");
 
 for (let i = 0; i < 256; i++) {
     const square = document.createElement("div");
@@ -56,7 +57,7 @@ function addHoverHandler() {
     const hoverSqaureList = document.querySelectorAll(".grid-item");
     hoverSqaureList.forEach(square => {
     square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = "#c8d6bf";
+        square.style.backgroundColor = color.value;
     });
 });
 }
