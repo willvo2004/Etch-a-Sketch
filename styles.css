@@ -4,8 +4,8 @@ body {
 }
 
 .div-container {
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     align-content: flex-start;
     display: flex;
     flex-wrap: wrap;
@@ -13,9 +13,9 @@ body {
 }
 
 .grid-item {
-    width: calc(33.33333% - 10px);
-    height: calc(33.33333% - 10px);
+    width: calc(6.25% - 10px);
+    height: calc(6.25% - 10px);
     margin: 0; /* Adjust as needed */
-    background-color: #3498db; /* Adjust the background color as needed */
-    border: 5px dotted black;
+    background-color: wheat; /* Adjust the background color as needed */
+    border: 5px solid transparent;
   }
