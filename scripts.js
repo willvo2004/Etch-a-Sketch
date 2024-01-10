@@ -10,7 +10,7 @@ for (let i = 0; i < 256 ; i++) {
 const hoverSqaureList = document.querySelectorAll(".grid-item");
 hoverSqaureList.forEach(square => {
     square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = "red";
+        square.style.backgroundColor = "#9e6652";
     });
 });
 
