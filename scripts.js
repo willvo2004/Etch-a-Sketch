@@ -10,8 +10,15 @@ for (let i = 0; i < 256 ; i++) {
 const hoverSqaureList = document.querySelectorAll(".grid-item");
 hoverSqaureList.forEach(square => {
     square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = "#9e6652";
+        square.style.backgroundColor = "#c8d6bf";
     });
 });
 
+const slider = document.querySelector(".slider");
+const value = document.querySelector("#value");
+value.innerHTML = slider.value + " x " + slider.value;
+
+slider.oninput = function() {
+    value.innerHTML = this.value + " x " + this.value;
+  }
 

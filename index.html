@@ -8,13 +8,20 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="inputs-container"> <!--everything on the left-->
-        
-    </div>
-    <div class="rightside-container">
-        <div class="div-container">
-            <!--div squares go here-->
-        </div>  
+    <h1>Sketch-Box</h1>
+    <div class="parent-container">
+        <div class="inputs-container"> <!--everything on the left-->
+            <div class="slide-container">
+                <p><span id="value"></span></p>
+                <input type="range" min="1" max="64" value="16" class="slider" id="grid-size">
+                <p id="subtext">Grid Size</p>
+            </div>
+        </div>
+        <div class="rightside-container">
+            <div class="div-container">
+                <!--div squares go here-->
+            </div>  
+        </div>
     </div>
 </body>
 </html>
