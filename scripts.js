@@ -20,17 +20,6 @@ slider.oninput = function() {
     updateGrid();
   }
 
-  function updateGrid() {
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-    }
-    
-    const grid = slider.value;
-    for (let i = 0; i < grid**2 ; i++) {
-        const sqaure = createGridItems(grid);
-        container.appendChild(sqaure);
-    }
-}
 
 function updateGrid() {
     while (container.firstChild) {
@@ -57,7 +46,15 @@ function addHoverHandler() {
     const hoverSqaureList = document.querySelectorAll(".grid-item");
     hoverSqaureList.forEach(square => {
     square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = color.value;
+            square.style.backgroundColor = color.value;
+        });
+    });
+}
+
+const clearBtn = document.querySelector("#clear-btn");
+clearBtn.addEventListener("click", () => {
+    const allSqaures = document.querySelectorAll(".grid-item");
+    allSqaures.forEach(sqaure => {
+        sqaure.style.backgroundColor = "white";
     });
 });
-}
