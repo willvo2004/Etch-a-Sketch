@@ -13,9 +13,9 @@ body {
 }
 
 .grid-item {
-    width: calc(25% - 10px);
-    height: calc(25% - 10px);
+    width: calc(33.33333% - 10px);
+    height: calc(33.33333% - 10px);
     margin: 0; /* Adjust as needed */
     background-color: #3498db; /* Adjust the background color as needed */
-    border: 5px solid black;
+    border: 5px dotted black;
   }
